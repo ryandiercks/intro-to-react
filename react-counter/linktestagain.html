@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Link Test</title>
+  </head>
+  <body>
+     <div id="app"></div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+     <script type="text/babel">
+   class Link extends Component {
+  render() {
+    return (
+      <div className="Link">
+<div className="container">
+          <ul>
+            <li><a href="">Hello</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Books</a></li>
+          </ul>
+          <hr/>
+{/* Routes will go here */}
+</div>
+</div>
+    );
+  }
+}
+       ReactDOM.render(
+         <Link />, document.getElementById('app')
+       );
+     </script>
+  </body>
+</html>
